@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Cadastro de Professores</title>
+</head>
+<body class="bg-body-secondary">
+    <div class="container p-5 bg-light w-50 mt-3">
+        <form action="index.html">
+            <div class="mb-3">
+            <label for="nome" class="form-label">Nome completo</label>
+            <input type="text" name="nome" id="idnome" class="form-control w-75" placeholder="Digite seu nome completo">
+        </div>
+        <div class="mb-3">
+            <label for="nasc" class="form-label">Nascimento</label>
+            <input type="date" name="nasc" id="idnasc" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" name="cpf" id="idcpf" class="form-control w-50" placeholder="Digite apenas números">
+        </div>
+        <div class="mb-3">
+            <label for="end" class="form-label">Endereço completo</label>
+            <input type="text" name="end" id="idend" class="form-control w-75" placeholder="Digite seu endereço completo">
+        </div>
+        <div class="mb-3">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input type="text" name="bairro" id="idbairro" class="form-control w-75" placeholder="Digite seu bairro">
+        </div>
+        <div class="mb-3">
+            <label for="cid" class="form-label">Cidade</label>
+            <input type="text" name="cid" id="idcid" class="form-control w-75" list="cidades" placeholder="Buscar cidade...">
+            <datalist id="cidades">
+                <option value="Monte Dourado-PA">Monte Dourado-PA</option>
+                <option value="Laranjal do jari-AP">Laranjal do jari-AP</option>
+                <option value="Vitória do Jari-AP">Vitória do Jari-AP</option>
+            </datalist>
+        </div>
+        <div class="mb-3">
+            <label for="formacao" class="form-label">Formação academica</label>
+            <input type="text" name="formacao" id="idformacao" class="form-control w-75" list="academica" placeholder="Buscar formação acadêmica...">
+            <datalist id="academica">
+                <option value="Superior Incompleto">Superior Incompleto</option>
+                <option value="Superior completo">Superior</option>
+                <option value="Pósgraduado">Pósgraduado</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+                <option value="pósdoutorado">pósdoutorado</option>
+
+            </datalist>
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">Salvar</button>
+        <button type="submit" class="btn btn-outline-info">Cancelar</button>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Home</title>
+</head>
+<style>
+    .nb{
+        
+        background-color: rgb(35, 45, 182);
+        height: 50px;
+        
+    }
+    .fonte{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20pt;
+    }
+    .cursor{
+        cursor: pointer;
+    }
+    
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm nb">
+       <div class="container">
+        <a href="" class="navbar-brand d-flex align-items-center text-light fs-5">
+            <i class="bi bi-book fs-1 me-2"></i>
+            
+            Esc Mul Benedito Lima Penelva</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-link text-light fs-5 ">Home</a>
+                    <div class="dropdown">
+
+                    <a href="" class="nav-link dropdown-toggle text-light fs-5"data-bs-toggle="dropdown">Professores</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="prof.html" class="dropdown-item">Cadastra</a>
+                            <a href="" class="dropdown-item">Consultar</a>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-light fs-5 cursor" data-bs-toggle="dropdown">Alunos</a>
+                    <ul class="dropdown-menu">
+                    <li>
+                        <a href="aluno.html" class="dropdown-item">Cadastra</a>
+                        <a href="" class="dropdown-item">Consultar</a>
+                    </li>
+                </ul>
+               
+                  
+                </div>
+                <a href="login.html" class="nav-link text-light fs-5 ">Sair</a>
+             
+                </div>
+
+            </div>
+       </div>
+       <!-- inserir aqui um button hamburger -->
+
+      
+    </nav>
+    <div class="container py-5">
+        <div class="carousel slide" data-bs-ride="carousel" id="ads">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+               
+            </div>
+            <div class="carousel-inner">
+                <h1 class="text-center text-dark fonte ">Projeto:família presente!alunos excelentes.</h1>
+                <div class="carousel-item active">
+                
+                    <img src="imagem/foto9.png?ramdon=1" alt="" class="d-block w-100">
+                </div>
+                
+                <div class="carousel-item">
+                
+                    <img src="imagem/foto11.jpg?ramdon=2" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                
+                    <img src="imagem/foto12.jpg?ramdon=3" alt="" class="d-block w-100">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon">
+
+                </span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                <span class="carousel-control-next-icon">
+
+                </span>
+            </button>
+            
+        </div>
+    </div>   
+</body>
+</html>
